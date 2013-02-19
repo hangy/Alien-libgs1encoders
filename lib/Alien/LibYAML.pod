@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-Alien::YAML - Build and install libyaml, a C-based YAML parser and emitter
+Alien::LibYAML - Build and install libyaml, a C-based YAML parser and emitter
 
 =head1 SYNOPSIS
 

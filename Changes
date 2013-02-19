@@ -1,7 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
-    - Promoteed to full release.
+    - Fixed module name in POD.
+    - Promoted to full release.
 
 v0.0.1    2013-02-19 03:39:00 CST6CDT
     - First version, released on an unsuspecting world.
