@@ -1,3 +1,5 @@
+#!/usr/bin/env perl
+
 use v5.10;
 use strict;
 use warnings FATAL => "all";
@@ -14,12 +16,11 @@ my $builder = Alien::Base::ModuleBuild->new(
     alien_name => "libyaml",
     alien_repository => {
         protocol => "http",
-        host     => "github.com"
-        location => "/yaml/libyaml/archive/",
-        pattern  => qr(^master\.zip$)
+        host     => "pyyaml.org",
+        location => "/download/libyaml/",
+        pattern  => qr(^yaml-([\d\.]+)\.tar\.gz$)
     },
     alien_build_commands => [
-        "%pbootstrap",
         "%pconfigure --prefix=%s --enable-shared",
         "make",
         "make install"
@@ -27,3 +28,5 @@ my $builder = Alien::Base::ModuleBuild->new(
     # Prerequisites inserted by DistZilla:
     ##{ $plugin->get_prereqs ##}
 );
+
+$builder->create_build_script;

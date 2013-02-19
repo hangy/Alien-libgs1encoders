@@ -12,7 +12,8 @@ say $libyaml->cflags;
 
 =head1 DESCRIPTION
 
-This distribution provides an alien wrapper for libyaml. That's all!
+This distribution provides an alien wrapper for libyaml. It requires a C
+compiler. That's all!
 
 =head1 SEE ALSO
 
