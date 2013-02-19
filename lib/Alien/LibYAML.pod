@@ -6,9 +6,9 @@ Alien::LibYAML - Build and install libyaml, a C-based YAML parser and emitter
 
 =head1 SYNOPSIS
 
-my $libyaml = Alien::LibYAML->new;
-say $libyaml->libs;
-say $libyaml->cflags;
+    my $libyaml = Alien::LibYAML->new;
+    say $libyaml->libs;
+    say $libyaml->cflags;
 
 =head1 DESCRIPTION
 

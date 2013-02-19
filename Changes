@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - Fixed synopsis in POD.
+
+v0.0.2    2013-02-19 14:56:53 America/Chicago
     - Fixed module name in POD.
     - Promoted to full release.
 
