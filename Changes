@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+v0.0.3    2013-02-19 16:23:29 America/Chicago
     - Fixed synopsis in POD.
 
 v0.0.2    2013-02-19 14:56:53 America/Chicago
