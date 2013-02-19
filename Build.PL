@@ -6,6 +6,7 @@ use warnings FATAL => "all";
 use utf8;
 
 use Alien::Base::ModuleBuild;
+use File::Spec::Functions qw(catfile);
 
 my $builder = Alien::Base::ModuleBuild->new(
     dist_name => "Alien-LibYAML",
@@ -28,5 +29,11 @@ my $builder = Alien::Base::ModuleBuild->new(
     # Prerequisites inserted by DistZilla:
     ##{ $plugin->get_prereqs ##}
 );
+
+### Add generated file:
+my $config_data_pm = catfile(qw(lib Alien LibYAML ConfigData.pm));
+open my $MANIFEST, ">>", "MANIFEST";
+$MANIFEST->print($config_data_pm, "\n");
+$MANIFEST->close;
 
 $builder->create_build_script;
