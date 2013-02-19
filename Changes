@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - Change Build.PL to download archive from github repository.
 
 v0.0.3    2013-02-19 16:23:29 America/Chicago
     - Fixed synopsis in POD.

@@ -11,17 +11,19 @@ use File::Spec::Functions qw(catfile);
 my $builder = Alien::Base::ModuleBuild->new(
     dist_name => "Alien-LibYAML",
     license => "MIT",
-    dist_abstract => q(Build and install LibYAML),
-    dist_author => q"Richard Simões <rsimoes AT cpan DOT org>",
+    dist_abstract => "Build and install libyaml, a C-based YAML parser and emitter",
+    dist_author => "Richard Simões <rsimoes AT cpan DOT org>",
     dist_version_from => "lib/Alien/LibYAML.pm",
     alien_name => "libyaml",
     alien_repository => {
         protocol => "http",
-        host     => "pyyaml.org",
-        location => "/download/libyaml/",
-        pattern  => qr(^yaml-([\d\.]+)\.tar\.gz$)
+        host     => "github.com",
+        location => "/yaml/libyaml/archive/",
+        exact_filename => "master.tar.gz",
+        exact_version => "0.1.4"
     },
     alien_build_commands => [
+        "%pbootstrap",
         "%pconfigure --prefix=%s --enable-shared",
         "make",
         "make install"
