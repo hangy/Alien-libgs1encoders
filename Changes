@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+v0.0.5    2013-02-19 20:13:48 America/Chicago
     - Add config requirement (Alien::Base::ModuleBuild)
 
 v0.0.4    2013-02-19 17:59:49 America/Chicago
