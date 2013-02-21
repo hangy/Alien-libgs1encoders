@@ -17,9 +17,9 @@ my $builder = Alien::Base::ModuleBuild->new(
     alien_name => "libyaml",
     alien_repository => {
         protocol => "http",
-        host     => "github.com",
-        location => "/yaml/libyaml/archive/",
-        exact_filename => "master.tar.gz",
+        host     => "nodeload.github.com",
+        location => "/yaml/libyaml/tar.gz/",
+        exact_filename => "master",
         exact_version => "0.1.4"
     },
     alien_build_commands => [

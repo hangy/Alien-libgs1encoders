@@ -1,12 +1,15 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - Changed download location to one served over HTTP instead of HTTPS.
+    - Increased version requirement of Alien::Base::ModuleBuild from 0.002 to
+      0.003.
 
 v0.0.5    2013-02-19 20:13:48 America/Chicago
     - Add config requirement (Alien::Base::ModuleBuild)
 
 v0.0.4    2013-02-19 17:59:49 America/Chicago
-    - Change Build.PL to download archive from github repository.
+    - Changed Build.PL to download archive from github repository.
 
 v0.0.3    2013-02-19 16:23:29 America/Chicago
     - Fixed synopsis in POD.
