@@ -1,9 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
-    - Changed download location to one served over HTTP instead of HTTPS.
-    - Increased version requirement of Alien::Base::ModuleBuild from 0.002 to
-      0.003.
+    - Changed download location to official location.
+    - Increased minimum version requirement of Alien::Base::ModuleBuild from
+      0.003 to 0.004.
 
 v0.0.5    2013-02-19 20:13:48 America/Chicago
     - Add config requirement (Alien::Base::ModuleBuild)
