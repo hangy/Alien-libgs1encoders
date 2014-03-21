@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+v0.0.6    2014-03-21 13:06:39-05:00 America/Chicago
     - Changed download location to official location.
     - Increased minimum version requirement of Alien::Base::ModuleBuild from
       0.003 to 0.004.
