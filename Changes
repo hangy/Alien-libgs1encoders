@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - Bumped version of libyaml from 0.1.5 to 0.1.6 following a security alert (http://www.ocert.org/advisories/ocert-2014-003.html).
 
 v0.0.6    2014-03-21 13:06:39-05:00 America/Chicago
     - Changed download location to official location.
@@ -20,5 +21,5 @@ v0.0.2    2013-02-19 14:56:53 America/Chicago
     - Fixed module name in POD.
     - Promoted to full release.
 
-v0.0.1    2013-02-19 03:39:00 CST6CDT
+v0.0.1    2013-02-19 03:39:00 America/Chicago
     - First version, released on an unsuspecting world.
