@@ -19,8 +19,8 @@ my $builder = Alien::Base::ModuleBuild->new(
         protocol => 'http',
         host     => 'bitbucket.org',
         location => '/xi/libyaml/get/',
-        exact_filename => '0.1.5.tar.gz',
-        exact_version => '0.1.5'
+        exact_filename => '0.1.6.tar.gz',
+        exact_version => '0.1.6'
     },
     alien_build_commands => [
         '%pbootstrap',
