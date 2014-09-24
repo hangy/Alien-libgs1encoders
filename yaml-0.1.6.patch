@@ -1,0 +1,10 @@
+diff -u -r yaml-0.1.6/yaml-0.1.pc.in yaml-0.1.6.o/yaml-0.1.pc.in
+--- yaml-0.1.6/yaml-0.1.pc.in	2014-09-24 15:20:01.564362299 -0400
++++ yaml-0.1.6.o/yaml-0.1.pc.in	2014-03-26 14:54:02.000000000 -0400
+@@ -6,5 +6,5 @@
+ Name: LibYAML
+ Description: Library to parse and emit YAML
+ Version: @PACKAGE_VERSION@
++Cflags: -I${includedir}
+-Cflags:
+ Libs: -L${libdir} -lyaml
