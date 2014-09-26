@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+v0.1.0    2014-09-25 22:05:02-05:00 America/Chicago
     - Improved reliability of LibYAML build process (thanks Graham Ollis)
 
 v0.0.7    2014-03-30 14:14:19CDT-0500 America/Chicago
