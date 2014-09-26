@@ -1,7 +1,10 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
-    - Bumped version of libyaml from 0.1.5 to 0.1.6 following a security alert (http://www.ocert.org/advisories/ocert-2014-003.html).
+    - Improved reliability of LibYAML build process (thanks Graham Ollis)
+
+v0.0.7    2014-03-30 14:14:19CDT-0500 America/Chicago
+    - Bumped version of libyaml from 0.1.5 to 0.1.6 following a security alert, found at http://www.ocert.org/advisories/ocert-2014-003.html (tokuhirom++).
 
 v0.0.6    2014-03-21 13:06:39-05:00 America/Chicago
     - Changed download location to official location.
