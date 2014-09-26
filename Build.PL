@@ -17,17 +17,17 @@ my $builder = Alien::Base::ModuleBuild->new(
     alien_name => 'libyaml',
     alien_repository => {
         protocol => 'http',
-        host     => 'bitbucket.org',
-        location => '/xi/libyaml/get/',
-        exact_filename => '0.1.6.tar.gz',
-        exact_version => '0.1.6'
+        host     => 'pyyaml.org/',
+        location => '/download/libyaml/',
+        pattern  => qr{^yaml-.*\.tar\.gz$},
     },
     alien_build_commands => [
-        '%pbootstrap',
-        '%pconfigure --prefix=%s --enable-shared',
-        'make',
-        'make install'
+      'patch -p1 < ../../yaml-0.1.6.patch',
+      '%c --prefix=%s',
+      'make',
+      'make install',
     ],
+    alien_isolate_dynamic => 1,
     # Prerequisites inserted by DistZilla:
     ##{ $plugin->get_prereqs ##}
 );
