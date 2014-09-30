@@ -1,10 +1,23 @@
-diff -u -r yaml-0.1.6/yaml-0.1.pc.in yaml-0.1.6.o/yaml-0.1.pc.in
---- yaml-0.1.6/yaml-0.1.pc.in	2014-09-24 15:20:01.564362299 -0400
-+++ yaml-0.1.6.o/yaml-0.1.pc.in	2014-03-26 14:54:02.000000000 -0400
-@@ -6,5 +6,5 @@
+diff --git a/include/yaml.h b/include/yaml.h
+index 5a04d36..5beba59 100644
+--- a/include/yaml.h
++++ b/include/yaml.h
+@@ -27,6 +27,7 @@ extern "C" {
+ /** The public API declaration. */
+ 
+ #ifdef _WIN32
++#   define YAML_DECLARE_STATIC
+ #   if defined(YAML_DECLARE_STATIC)
+ #       define  YAML_DECLARE(type)  type
+ #   elif defined(YAML_DECLARE_EXPORT)
+diff --git a/yaml-0.1.pc.in b/yaml-0.1.pc.in
+index c566abf..70c8008 100644
+--- a/yaml-0.1.pc.in
++++ b/yaml-0.1.pc.in
+@@ -6,5 +6,5 @@ libdir=@libdir@
  Name: LibYAML
  Description: Library to parse and emit YAML
  Version: @PACKAGE_VERSION@
-+Cflags: -I${includedir}
 -Cflags:
++Cflags: -I${includedir}
  Libs: -L${libdir} -lyaml
