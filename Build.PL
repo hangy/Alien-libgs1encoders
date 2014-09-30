@@ -22,7 +22,7 @@ my $builder = Alien::Base::ModuleBuild->new(
         pattern  => qr{^yaml-.*\.tar\.gz$},
     },
     alien_build_commands => [
-      'patch -p1 < ../../yaml-0_1_6.patch',
+      'patch --binary -p1 < ../../yaml-0_1_6.patch',
       '%c --prefix=%s',
       'make',
       'make install',
