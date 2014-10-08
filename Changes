@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+v0.1.1    2014-10-08 13:55:47-04:00 America/New_York
+    - Better Windows support
+    - Support for Perl 5.8.x
+
 v0.1.0    2014-09-25 22:05:02-05:00 America/Chicago
     - Improved reliability of LibYAML build process (thanks Graham Ollis)
 
