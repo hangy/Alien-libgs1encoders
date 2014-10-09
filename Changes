@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+v0.1.2    2014-10-09 05:22:06-04:00 America/New_York
     - Fixed regression on some non-windows platforms where patch
       does not support --binary option
 
