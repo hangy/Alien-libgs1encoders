@@ -7,6 +7,8 @@ use utf8;
 use Alien::Base::ModuleBuild;
 use File::Spec::Functions qw(catfile);
 
+my $patch = $^O eq 'MSWin32' ? 'patch --binary' : 'patch';
+
 my $builder = Alien::Base::ModuleBuild->new(
     dist_name => 'Alien-LibYAML',
     license => 'MIT',
@@ -21,7 +23,7 @@ my $builder = Alien::Base::ModuleBuild->new(
         pattern  => qr{^yaml-.*\.tar\.gz$},
     },
     alien_build_commands => [
-      'patch --binary -p1 < ../../yaml-0_1_6.patch',
+      "$patch -p1 < ../../yaml-0_1_6.patch",
       '%c --prefix=%s',
       'make',
       'make install',

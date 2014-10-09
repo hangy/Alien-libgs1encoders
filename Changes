@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - Fixed regression on some non-windows platforms where patch
+      does not support --binary option
 
 v0.1.1    2014-10-08 13:55:47-04:00 America/New_York
     - Better Windows support
