@@ -28,6 +28,9 @@ my $builder = Alien::Base::ModuleBuild->new(
       'make',
       'make install',
     ],
+    alien_bin_requires => {
+      'Alien::patch' => 0,
+    },
     alien_isolate_dynamic => 1,
     # Prerequisites inserted by DistZilla:
     ##{ $plugin->get_prereqs ##}
