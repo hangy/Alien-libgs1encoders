@@ -17,15 +17,20 @@ my $builder = Alien::Base::ModuleBuild->new(
     dist_version_from => 'lib/Alien/LibYAML.pm',
     alien_name => 'yaml-0.1',
     alien_repository => {
-        protocol => 'http',
-        host     => 'pyyaml.org/',
-        location => '/download/libyaml/',
-        pattern  => qr{^yaml-.*\.tar\.gz$},
+        protocol            => 'http',
+        host                => 'pyyaml.org/',
+        location            => '/download/libyaml/',
+        pattern             => qr{^yaml-.*\.tar\.gz$},
+        # does require a c compiler, but the test for this in
+        # Alien::Base is not all that reliable
+        c_compiler_required => 0,
     },
     alien_build_commands => [
       "$patch -p1 < ../../yaml-0_1_6.patch",
       '%c --prefix=%s',
       'make',
+    ],
+    alien_install_commands => [
       'make install',
     ],
     alien_bin_requires => {

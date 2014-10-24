@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - command `make install' needs to be an install command of course,
+      not a build command.
+    - disable compiler check from Alien::Base which is pretty unreliable
 
 v0.1.3    2014-10-14 08:17:26-04:00 America/New_York
     - Use Alien::patch for systems that don't provide patch
