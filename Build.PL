@@ -18,7 +18,7 @@ my $builder = Alien::Base::ModuleBuild->new(
     alien_name => 'yaml-0.1',
     alien_repository => {
         protocol            => 'http',
-        host                => 'pyyaml.org/',
+        host                => 'pyyaml.org',
         location            => '/download/libyaml/',
         pattern             => qr{^yaml-.*\.tar\.gz$},
         # does require a c compiler, but the test for this in
