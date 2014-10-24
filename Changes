@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+v0.1.4    2014-10-24 10:06:13-04:00 America/New_York
     - command `make install' needs to be an install command of course,
       not a build command.
     - disable compiler check from Alien::Base which is pretty unreliable
