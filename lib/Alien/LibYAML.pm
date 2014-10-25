@@ -2,6 +2,7 @@ package Alien::LibYAML;
 
 use strict;
 use warnings;
+use 5.008001;
 use parent qw(Alien::Base);
 
 # VERSION

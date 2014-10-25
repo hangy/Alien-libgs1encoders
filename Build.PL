@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 use strict;
-use warnings FATAL => 'all';
+use 5.008001;
 use utf8;
 
 use Alien::Base::ModuleBuild;
