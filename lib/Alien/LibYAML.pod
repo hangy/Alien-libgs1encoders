@@ -6,9 +6,17 @@ Alien::LibYAML - Build and install libyaml, a C-based YAML parser and emitter
 
 =head1 SYNOPSIS
 
-    my $libyaml = Alien::LibYAML->new;
-    say $libyaml->libs;
-    say $libyaml->cflags;
+In your C<Build.PL>:
+
+    use Alien::LibYAML;
+    use Module::Build;
+    
+    Module::Build->new(
+      ...
+      extra_compiler_flags => Alien::LibYAML->cflags,
+      extra_linker_flags   => Alien::LibYAML->libs,
+      ...
+    )->create_build_script;
 
 =head1 DESCRIPTION
 
@@ -27,7 +35,13 @@ Perl bindings for libyaml (library bundled with distribution).
 
 =head1 AUTHOR
 
+Original Author:
+
 Richard Simões C<< <rsimoes AT cpan DOT org> >>
+
+Current Maintainer:
+
+Graham Ollis C<< <plicease AT cpan DOT org> >>
 
 =head1 COPYRIGHT AND LICENSE
 

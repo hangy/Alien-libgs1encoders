@@ -1,8 +1,7 @@
 package Alien::LibYAML;
 
 use strict;
-use warnings FATAL => 'all';
-use utf8;
+use warnings;
 use parent qw(Alien::Base);
 
 # VERSION
