@@ -36,6 +36,7 @@ my $builder = Alien::Base::ModuleBuild->new(
     alien_bin_requires => {
       'Alien::patch' => 0,
     },
+    alien_stage_install => 1,
     alien_isolate_dynamic => 1,
     # Prerequisites inserted by DistZilla:
     ##{ $plugin->get_prereqs ##}
