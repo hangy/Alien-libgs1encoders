@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+v0.1.6    2015-04-22 07:36:15-04:00 America/New_York
     - use alien_stage_install
 
 v0.1.5    2015-02-18 17:00:47-05:00 America/New_York
