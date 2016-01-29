@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+   - metadata consistency and cleanup 
 
 v0.1.7    2015-04-22 11:42:20-04:00 America/New_York
     - require Alien::Base 0.016 (needed for alien_stage_install)
