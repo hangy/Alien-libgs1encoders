@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+v0.1.10   2016-07-12 11:58:51-04:00 America/New_York
+  - Include dist metadata in JSON format
+
 v0.1.9    2016-04-25 11:31:03-04:00 America/New_York
   - require Test::Alien 0.05 in t/ffi.t
 
