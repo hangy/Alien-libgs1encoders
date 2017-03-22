@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Migrate to Alien::Build + alienfile
 
 v0.1.10   2016-07-12 11:58:51-04:00 America/New_York
   - Include dist metadata in JSON format
