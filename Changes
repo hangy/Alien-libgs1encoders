@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Specify minimum version of Path::Tiny
 
 2.00      2017-03-22 15:27:48-04:00 America/New_York
   - Migrate to Alien::Build + alienfile

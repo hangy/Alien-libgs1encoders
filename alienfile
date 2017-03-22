@@ -10,7 +10,7 @@ share {
   );
   plugin Extract => 'tar.gz';
   
-  requires 'Path::Tiny';
+  requires 'Path::Tiny' => '0.077';
   
   patch sub {
     my($build) = @_;
