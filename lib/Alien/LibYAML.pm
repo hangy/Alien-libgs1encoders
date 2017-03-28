@@ -7,24 +7,9 @@ use base qw(Alien::Base);
 
 # VERSION
 # ABSTRACT: Build and install libyaml, a C-based YAML parser and emitter
+# ALIEN SYNOPSIS
 
 1;
-
-=encoding utf8
-
-=head1 SYNOPSIS
-
-In your C<Build.PL>:
-
-    use Alien::LibYAML;
-    use Module::Build;
-    
-    Module::Build->new(
-      ...
-      extra_compiler_flags => Alien::LibYAML->cflags,
-      extra_linker_flags   => Alien::LibYAML->libs,
-      ...
-    )->create_build_script;
 
 =head1 DESCRIPTION
 
