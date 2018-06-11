@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Moved repository to the Perl5-Alien org
 
 2.01      2017-03-22 15:30:53-04:00 America/New_York
   - Specify minimum version of Path::Tiny
