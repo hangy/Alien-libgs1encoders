@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+  - Build dynamic libary for FFI for share installs
 
 2.02      2018-06-11 19:17:08 -0400
   - Moved repository to the Perl5-Alien org
