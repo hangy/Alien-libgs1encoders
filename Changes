@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+2.04      2018-06-13 04:23:58 -0400
+  - Production release identical to 2.03_01
+
 2.03_01   2018-06-12 08:59:54 -0400
   - Build dynamic libary for FFI for share installs
 
