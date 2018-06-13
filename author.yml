@@ -8,6 +8,7 @@ pod_spelling_system:
     - RSIMOES
     - Simonov
     - libyaml
+    - Simões
 
 pod_coverage:
   skip: 0
