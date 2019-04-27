@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
   - Use https instead of http.
+  - Fix for fedora system install (gh#3)
+    see rt#129323, and
+    https://github.com/Perl5-FFI/FFI-CheckLib/issues/13
 
 2.04      2018-06-13 04:23:58 -0400
   - Production release identical to 2.03_01

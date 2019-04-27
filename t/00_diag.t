@@ -21,7 +21,7 @@ $modules{$_} = $_ for qw(
 
 $post_diag = sub {
   require Alien::LibYAML;
-  diag "version        = ", Alien::LibYAML->config('version');
+  diag "version        = ", Alien::LibYAML->version;
   diag "cflags         = ", Alien::LibYAML->cflags;
   diag "cflags_static  = ", Alien::LibYAML->cflags_static;
   diag "libs           = ", Alien::LibYAML->libs;
