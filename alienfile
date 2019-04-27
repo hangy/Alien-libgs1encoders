@@ -49,7 +49,7 @@ sys {
   meta->after_hook(
     gather_system => sub {
       my($build) = @_;
-      $build->runtime_prop->{ffi_try_linker_script} = 1;
+      $build->runtime_prop->{ffi_checklib}->{system} = [ try_linker_script => 1 ];
     },
   );
 };
