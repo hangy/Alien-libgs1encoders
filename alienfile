@@ -2,11 +2,16 @@ use alienfile;
 
 plugin 'PkgConfig' => 'yaml-0.1';
 
+configure {
+  requires 'Alien::Build::Plugin::Decode::Mojo';
+};
+
 share {
 
   plugin Download => (
     url     => 'https://pyyaml.org/download/libyaml/',
     version => qr/^yaml-([0-9\.]+)\.tar\.gz$/,
+    decoder => 'Decode::Mojo',
   );
   plugin Extract => 'tar.gz';
 
