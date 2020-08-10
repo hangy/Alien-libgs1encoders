@@ -1,41 +1,42 @@
-# Alien::LibYAML [![Build Status](https://secure.travis-ci.org/Perl5-Alien/Alien-LibYAML.png)](http://travis-ci.org/Perl5-Alien/Alien-LibYAML)
+# Alien::LibYAML [![Build Status](https://travis-ci.org/PerlAlien/Alien-LibYAML.svg)](http://travis-ci.org/PerlAlien/Alien-LibYAML)
 
 Build and install libyaml, a C-based YAML parser and emitter
 
 # SYNOPSIS
 
-In your Build.PL:
-
-    use Module::Build;
-    use Alien::LibYAML;
-    my $builder = Module::Build->new(
-      ...
-      configure_requires => {
-        'Alien::LibYAML' => '0',
-        ...
-      },
-      extra_compiler_flags => Alien::LibYAML->cflags,
-      extra_linker_flags   => Alien::LibYAML->libs,
-      ...
-    );
-    
-    $build->create_build_script;
-
 In your Makefile.PL:
 
-    use ExtUtils::MakeMaker;
-    use Config;
-    use Alien::LibYAML;
-    
-    WriteMakefile(
-      ...
-      CONFIGURE_REQUIRES => {
-        'Alien::LibYAML' => '0',
-      },
-      CCFLAGS => Alien::LibYAML->cflags . " $Config{ccflags}",
-      LIBS    => [ Alien::LibYAML->libs ],
-      ...
-    );
+```perl
+use ExtUtils::MakeMaker;
+use Alien::Base::Wrapper ();
+
+WriteMakefile(
+  Alien::Base::Wrapper->new('Alien::LibYAML')->mm_args2(
+    # MakeMaker args
+    NAME => 'My::XS',
+    ...
+  ),
+);
+```
+
+In your Build.PL:
+
+```perl
+use Module::Build;
+use Alien::Base::Wrapper qw( Alien::LibYAML !export );
+
+my $builder = Module::Build->new(
+  ...
+  configure_requires => {
+    'Alien::LibYAML' => '0',
+    ...
+  },
+  Alien::Base::Wrapper->mb_args,
+  ...
+);
+
+$build->create_build_script;
+```
 
 # DESCRIPTION
 
@@ -67,4 +68,6 @@ This software is Copyright (c) 2013-2018 by Richard Simões.
 
 This is free software, licensed under:
 
-    The MIT (X11) License
+```
+The MIT (X11) License
+```
