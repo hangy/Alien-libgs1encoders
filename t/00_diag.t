@@ -13,22 +13,14 @@ $modules{$_} = $_ for qw(
   Alien::Base
   Alien::Build
   Alien::Build::MM
-  Alien::Build::Plugin::Decode::Mojo
+  Alien::Build::Plugin::Download::GitHub
   ExtUtils::MakeMaker
   FFI::CheckLib
   Test2::V0
   Test::Alien
 );
 
-$post_diag = sub {
-  require Alien::LibYAML;
-  diag "version        = ", Alien::LibYAML->version;
-  diag "cflags         = ", Alien::LibYAML->cflags;
-  diag "cflags_static  = ", Alien::LibYAML->cflags_static;
-  diag "libs           = ", Alien::LibYAML->libs;
-  diag "libs_static    = ", Alien::LibYAML->libs_static;
-  diag "dynamic_libs   = $_" for Alien::LibYAML->dynamic_libs;
-};
+
 
 my @modules = sort keys %modules;
 

@@ -1,6 +1,6 @@
-# Alien::LibYAML [![Build Status](https://travis-ci.org/PerlAlien/Alien-LibYAML.svg)](http://travis-ci.org/PerlAlien/Alien-LibYAML)
+# Alien::libgs1encoders
 
-Build and install libyaml, a C-based YAML parser and emitter
+Build and install libgs1encoders, a C-based GS1 barcode parser
 
 # SYNOPSIS
 
@@ -11,7 +11,7 @@ use ExtUtils::MakeMaker;
 use Alien::Base::Wrapper ();
 
 WriteMakefile(
-  Alien::Base::Wrapper->new('Alien::LibYAML')->mm_args2(
+  Alien::Base::Wrapper->new('Alien::libgs1encoders')->mm_args2(
     # MakeMaker args
     NAME => 'My::XS',
     ...
@@ -23,12 +23,12 @@ In your Build.PL:
 
 ```perl
 use Module::Build;
-use Alien::Base::Wrapper qw( Alien::LibYAML !export );
+use Alien::Base::Wrapper qw( Alien::libgs1encoders !export );
 
 my $builder = Module::Build->new(
   ...
   configure_requires => {
-    'Alien::LibYAML' => '0',
+    'Alien::libgs1encoders' => '0',
     ...
   },
   Alien::Base::Wrapper->mb_args,
@@ -40,34 +40,16 @@ $build->create_build_script;
 
 # DESCRIPTION
 
-This distribution provides an alien wrapper for libyaml. It requires a C
+This distribution provides an alien wrapper for libgs1encoders. It requires a C
 compiler. That's all!
-
-# SEE ALSO
-
-- [YAML::XS](https://metacpan.org/pod/YAML::XS)
-
-    Perl bindings for libyaml (library bundled with distribution).
-
-# COPYRIGHT AND LICENSE
-
-Copyright © 2014 Richard Simões. libyaml written and copyrighted by Kirill
-Simonov. Both libyaml and this distribution are released under the terms of the
-**MIT License** and may be modified and/or redistributed under the same or any
-compatible license.
 
 # AUTHOR
 
-Original author: Richard Simões (RSIMOES)
-
-Current maintainer: Graham Ollis <plicease@cpan.org>
+hangy
 
 # COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2013-2018 by Richard Simões.
+This software is copyright (c) 2023 by hangy.
 
-This is free software, licensed under:
-
-```
-The MIT (X11) License
-```
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.

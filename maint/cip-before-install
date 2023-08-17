@@ -8,13 +8,13 @@ if echo $CIP_TAG | grep -q -- -alpine ; then
   #cip sudo apk add libffi-dev
 elif  echo $CIP_TAG | grep -q -- -centos ; then
   echo CentOS
-  cip sudo yum install -y libffi-devel libyaml-devel
+  cip sudo yum install -y libffi-devel
 elif echo $CIP_TAG | grep -q -- -fedora ; then
   echo Fedora
-  cip sudo yum install -y libffi-devel libyaml-devel
+  cip sudo yum install -y libffi-devel
 else
   cip sudo apt-get update
-  cip sudo apt-get -y install libyaml-dev libffi-dev
+  cip sudo apt-get -y install libffi-dev
 fi
 
 cip exec cpanm -n FFI::Platypus
