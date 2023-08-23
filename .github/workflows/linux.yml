@@ -68,4 +68,4 @@ jobs:
       - name: Show Errors on Ubuntu
         if:  ${{ failure() }}
         run: |
-           cip bash cat /home/cip/.cpanm/work/*/build.log
+           cip exec cat /home/cip/.cpanm/work/*/build.log
