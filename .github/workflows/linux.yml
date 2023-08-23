@@ -19,6 +19,10 @@ jobs:
         cip:
           - tag: static
             install_type: default
+          - tag: "5.37"
+            install_type: system
+          - tag: "5.37"
+            install_type: share
 
     env:
       CIP_TAG: ${{ matrix.cip.tag }}
