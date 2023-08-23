@@ -12,7 +12,7 @@ share {
   build [
     'cd src/c-lib',
     '%{make}',
-    '%{make} install',
+    '%{make} DESTDIR=%{.install.prefix} install',
   ];
 
 };
