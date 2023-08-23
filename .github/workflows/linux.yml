@@ -64,3 +64,8 @@ jobs:
       - name: Build + Test
         run: |
           cip script
+  
+      - name: Show Errors on Ubuntu
+        if:  ${{ failure() }}
+        run: |
+           cip bash cat /home/cip/.cpanm/work/*/build.log
